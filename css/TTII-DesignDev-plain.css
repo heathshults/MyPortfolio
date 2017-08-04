@@ -1,16 +1,23 @@
 @charset "utf-8";
-/* TTI, Inc. CSS Document */
-/* <Utility Classes> ************************************************/
+/* <Utility Classes> */
+.utlVisibility {
+	visibility:visible;
+}
 .Kill-Pad {
-	padding: 0;
+	padding:0;
 }
 .Kill-Margin {
-	margin: 0;
+	margin:0;
 }
 .PullUp25 {
 	margin-top: -25px;
 	z-index: -1;
+	
 }
+
+/* </Utility Classes> */
+
+/* <Main Styles> */
 .VidBannerWrapper {
 	position: relative;
 	width: 100%;
@@ -157,38 +164,32 @@ i.fa-fw {
 	-ms-text-shadow: 0 0 0 Transparent;
 	text-shadow: 0 0 0 Transparent;
 }
-/* </Main Styles> ************************************************/
 
-/* <Countries> */
+  /* <Countries> */
 .Americas {
-	background-image: url(/Content/Images/Countries/Americas-light-grey.png);
+	background-image: url(../Content/Images/Countries/Americas-light-grey.png);
 	background-position: right top;
-	background-repeat: no-repeat;
-	background-size: 150px 150px;
+	background-repeat: no-repeat; 
 }
 .Asia {
-	background-image: url(/Content/Images/Countries/Asia-light-grey.png);
+	background-image: url(../Content/Images/Countries/Asia-light-grey.png);
 	background-position: right top;
 	background-repeat: no-repeat;
-	background-size: 150px 150px;
 }
 .Europe {
-	background-image: url(/Content/Images/Countries/Europe-light-grey.png);
+	background-image: url(../Content/Images/Countries/Europe-light-grey.png);
 	background-position: right top;
 	background-repeat: no-repeat;
-	background-size: 150px 150px;
 }
 .Israel {
-	background-image: url(/Content/Images/Countries/Israel-light-grey.png);
+	background-image: url(../Content/Images/Countries/Israel-light-grey.png);
 	background-position: right top;
 	background-repeat: no-repeat;
-	background-size: 150px 150px;
 }
-/* </Countries> */
+  /* </Countries> */
+/* </Main Styles> */
 
-
-
-/* <effects: transitions & transformations> ************************************************/
+/* <effects: transitions & transformations> */
 
 .Grow-Half-Size {
 	-webkit-transition: all .3s ease-in;
@@ -196,43 +197,25 @@ i.fa-fw {
 	-ms-transition: all .3s ease-in;
 	-o-transition: all .3s ease-in;
 	transition: all .3s ease-in;
+	
 	-moz-transform: scale(1.5);
 	-webkit-transform: scale(1.5);
 	-o-transform: scale(1.5);
 	-ms-transform: scale(1.5);
 	transform: scale(1.5);
 }
-.Shrink-Original-Size {
+.Shrink-Original-Size { 
 	-webkit-transition: all .3s ease-out;
 	-moz-transition: all .3s ease-out;
 	-ms-transition: all .3s ease-out;
 	-o-transition: all .3s ease-out;
 	transition: all .3s ease-out;
+	
 	-moz-transform: scale(1);
 	-webkit-transform: scale(1);
 	-o-transform: scale(1);
 	-ms-transform: scale(1);
 	transform: scale(1);
 }
+/* </effects: transitions & transformations> */
 
-/* </effects: transitions & transformations> ************************************************/
-/* <Media Queries> */
-
-/* Custom, iPhone Retina ************************************************/
-@media(min-width : 320px)/* and (max-width : 479px)*/ {
-}
-/* Extra Small Devices, Phones */ 
-@media(min-width : 480px) {
-}
-
-/* Small Devices, Tablets */
-@media(min-width : 768px) {
-}
-
-/* Medium Devices, Desktops */
-@media(min-width : 992px) /*and (max-width : 991)*/ {
-}
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-}
-/* </Media Queries> */
